@@ -1,0 +1,12 @@
+# new config variables:
+
+# if we have something in NEW_UID use that instead of 'pi'
+# if we have something in NEW_GECOS use that instead of ''
+# if we have something in NEW_PWD use that instead of 'raspberry'
+# if we have something in NEW_ROOT_PWD use that instead of 'root'
+
+# when PI_ZERO_OTG is non-empty:
+# make an image that uses OTG Gadget USB networking by default:
+# - add 'modules-load=dwc2,g_ether' to boot/cmdline.txt after 'rootwait'
+# - add 'dtoverlay=dwc2' to boot/config.txt
+# - make sure the file boot/ssh exists

@@ -1,4 +1,11 @@
 IMG_SUFFIX="-4GB"
-if [ "${USE_QEMU}" = "1" ]; then
-	export IMG_SUFFIX="${IMG_SUFFIX}-qemu"
+
+if [ "${PI_ZERO_OTG}" = "1" ]; then
+	IMG_SUFFIX="${IMG_SUFFIX}-pi0otg"
 fi
+
+if [ "${USE_QEMU}" = "1" ]; then
+	IMG_SUFFIX="${IMG_SUFFIX}-qemu"
+fi
+
+export IMG_SUFFIX

@@ -5,7 +5,7 @@ Index: jessie-stage2/rootfs/etc/rc.local
 @@ -11,4 +11,10 @@
  #
  # By default this script does nothing.
- 
+
 +# Print the IP address
 +_IP=$(hostname -I) || true
 +if [ "$_IP" ]; then

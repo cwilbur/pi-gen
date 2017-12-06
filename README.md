@@ -44,8 +44,8 @@ The following environment variables are supported:
    If you have Docker installed, you can set up a local apt caching proxy to
    like speed up subsequent builds like this:
 
-       docker-compose up -d
-       echo 'APT_PROXY=http://172.17.0.1:3142' >> config
+	   docker-compose up -d
+	   echo 'APT_PROXY=http://172.17.0.1:3142' >> config
 
  * `BASE_DIR`  (Default: location of `build.sh`)
 

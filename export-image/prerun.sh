@@ -54,7 +54,7 @@ echo "/:     offset $ROOT_OFFSET, length $ROOT_LENGTH"
 ROOT_FEATURES="^huge_file"
 for FEATURE in metadata_csum 64bit; do
 	if grep -q "$FEATURE" /etc/mke2fs.conf; then
-	    ROOT_FEATURES="^$FEATURE,$ROOT_FEATURES"
+		ROOT_FEATURES="^$FEATURE,$ROOT_FEATURES"
 	fi
 done
 mkdosfs -n boot -F 32 -v $BOOT_DEV > /dev/null
