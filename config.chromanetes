@@ -1,4 +1,6 @@
 touch stage3/SKIP stage4/SKIP stage5/SKIP 
+touch stage4/SKIP_IMAGES stage5/SKIP_IMAGES
+touch stage4/SKIP_IMAGES stage5/SKIP_IMAGES
 
 IMG_NAME=chromanetes
 APT_PROXY=http://localhost:3142/
