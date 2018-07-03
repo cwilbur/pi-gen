@@ -1,3 +1,5 @@
+touch stage3/SKIP stage4/SKIP stage5/SKIP 
+
 IMG_NAME=chromanetes
 APT_PROXY=http://localhost:3142/
 USE_QEMU=1
